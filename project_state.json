@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a premium, modern, professional static website for the luxury men’s grooming brand “Mr Black Salon” (Indian audience), with 5 pages (Home, About, Services, Gallery, Contact), WhatsApp/Call CTAs, responsive UI, SEO, and Netlify-ready deployment (no backend/payment/login).",
+  "architectural_notes": [
+    "Static website only: no backend, no login, no payment gateway, no online booking (CTAs via WhatsApp/phone only).",
+    "Tech stack: modern HTML/CSS/JS or React (Vite); code should be clean, reusable, well-structured.",
+    "Performance & SEO: fast-loading, SEO meta tags, optimized images.",
+    "Deployment target: Netlify.",
+    "Responsive design required for mobile and desktop.",
+    "Services page should include an image (or placeholder) for every listed service type/category, not only a small highlighted subset."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Premium men’s hair coloring scene, dark charcoal background with subtle warm gold accents, no text (service-hair-coloring.dim_800x600.jpg)\n- Premium men’s hair straightening/styling scene, dark charcoal background with subtle warm gold accents, no text (service-hair-straightening.dim_800x600.jpg)\n- Traditional hot towel royal shave scene, dark charcoal background with subtle warm gold accents, no text (service-royal-shave.dim_800x600.jpg)\n- Men’s beard coloring/grooming scene, dark charcoal background with subtle warm gold accents, no text (service-beard-coloring.dim_800x600.jpg)\n- Men’s anti-aging facial treatment scene, premium spa mood, dark charcoal background with subtle warm gold accents, no text (service-anti-aging-facial.dim_800x600.jpg)\n- Men’s de-tan treatment scene, premium spa mood, dark charcoal background with subtle warm gold accents, no text (service-de-tan-treatment.dim_800x600.jpg)\n- Premium men’s grooming package concept image (haircut + beard + facial), dark charcoal background with subtle warm gold accents, no text (service-executive-package.dim_800x600.jpg)\n- Luxury grooming package concept image (haircut + royal shave + facial + hair spa), dark charcoal background with subtle warm gold accents, no text (service-luxury-package.dim_800x600.jpg)\n- Special occasion groom prep concept image, dark charcoal background with subtle warm gold accents, no text (service-groom-special.dim_800x600.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-fully-static-fast-loading-responsive-website-for-the-men-s-grooming-brand-mr-black-salon-with-5-pages-home-about-us-services-gallery-and-contact",
+      "title": "Implement a fully static, fast-loading, responsive website for the men’s grooming brand “Mr Black Salon” with 5 pages: Home, About Us, Services, Gallery, and Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-premium-modern-visual-theme-consistent-across-the-site-using-a-black-charcoal-base-with-gold-accents-ultra-clean-typography-consistent-spacing-alignment-and-a-luxury-men-s-salon-aesthetic-suitable-for-an-indian-audience",
+      "title": "Apply a premium, modern visual theme consistent across the site using a black/charcoal base with gold accents, ultra-clean typography, consistent spacing/alignment, and a luxury men’s salon aesthetic suitable for an Indian audience.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-page-with-a-hero-section-featuring-the-headline-premium-grooming-for-the-modern-gentleman-and-prominent-cta-buttons-for-1-book-appointment-whatsapp-and-2-call-now-include-smooth-elegant-animations-transitions-fade-slide-hover-without-hurting-performance",
+      "title": "Build the Home page with a hero section featuring the headline “Premium Grooming for the Modern Gentleman” and prominent CTA buttons for (1) Book Appointment (WhatsApp) and (2) Call Now; include smooth, elegant animations/transitions (fade/slide/hover) without hurting performance.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-about-us-page-with-a-short-brand-story-emphasizing-professionalism-hygiene-and-a-premium-grooming-experience-include-trust-building-content-tailored-to-local-customers",
+      "title": "Create the About Us page with a short brand story emphasizing professionalism, hygiene, and a premium grooming experience; include trust-building content tailored to local customers.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-services-page-with-categories-hair-services-beard-shave-facial-skin-care-premium-grooming-packages-show-prices-and-use-a-clean-card-based-layout-highlight-main-services-haircut-facial-beard-hair-spa-with-images-and-include-whatsapp-call-ctas-no-online-booking",
+      "title": "Create the Services page with categories (Hair Services, Beard & Shave, Facial & Skin Care, Premium Grooming Packages), show prices, and use a clean card-based layout; highlight main services (Haircut, Facial, Beard, Hair Spa) with images and include WhatsApp/Call CTAs (no online booking).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-gallery-page-as-an-instagram-style-responsive-image-grid-using-placeholder-images-and-a-structure-that-makes-it-easy-to-replace-images-later-e-g-a-single-data-array-or-folder-based-mapping",
+      "title": "Create the Gallery page as an Instagram-style responsive image grid using placeholder images and a structure that makes it easy to replace images later (e.g., a single data array or folder-based mapping).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-contact-page-showing-the-business-address-and-clickable-phone-whatsapp-buttons-for-all-provided-numbers-embed-a-google-map-for-maduranthakam-location-include-an-instagram-profile-link-to-https-www-instagram-com-mr-black4473",
+      "title": "Create the Contact page showing the business address and clickable Phone/WhatsApp buttons for all provided numbers; embed a Google Map for Maduranthakam location; include an Instagram profile link to https://www.instagram.com/mr.black4473.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-action-button-site-wide-and-add-a-mobile-only-sticky-call-button-or-equivalent-prominent-mobile-cta-that-initiates-a-call-to-a-provided-number",
+      "title": "Add a floating WhatsApp action button site-wide and add a mobile-only sticky call button (or equivalent prominent mobile CTA) that initiates a call to a provided number.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-with-social-links-at-minimum-instagram-and-include-consistent-site-navigation-branding-elements-across-pages-header-nav-footer",
+      "title": "Add a footer with social links (at minimum Instagram) and include consistent site navigation/branding elements across pages (header/nav + footer).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-essentials-unique-page-titles-meta-descriptions-canonical-if-appropriate-open-graph-twitter-preview-tags-and-structured-accessible-headings-ensure-good-lighthouse-style-basics-responsive-meta-viewport-alt-text-semantic-landmarks",
+      "title": "Implement SEO essentials: unique page titles, meta descriptions, canonical (if appropriate), Open Graph/Twitter preview tags, and structured, accessible headings; ensure good Lighthouse-style basics (responsive meta viewport, alt text, semantic landmarks).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-optimize-performance-for-a-static-deployment-use-compressed-optimized-images-lazy-load-non-critical-images-e-g-gallery-and-ensure-the-build-is-ready-for-static-hosting-e-g-netlify-including-spa-routing-configuration-if-client-side-routing-is-used",
+      "title": "Optimize performance for a static deployment: use compressed/optimized images, lazy-load non-critical images (e.g., gallery), and ensure the build is ready for static hosting (e.g., Netlify) including SPA routing configuration if client-side routing is used.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-site-contains-no-payment-login-booking-system-or-backend-dependent-features-all-ctas-must-route-only-to-whatsapp-phone-calls-or-external-instagram",
+      "title": "Ensure the site contains no payment, login, booking system, or backend-dependent features; all CTAs must route only to WhatsApp, phone calls, or external Instagram.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-generated-static-image-assets-logo-premium-placeholders-by-placing-them-in-frontend-public-assets-generated-and-referencing-them-directly-from-the-ui",
+      "title": "Add and use generated static image assets (logo + premium placeholders) by placing them in frontend/public/assets/generated and referencing them directly from the UI.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-every-service-item-displayed-on-the-services-page-has-an-associated-image-by-adding-image-paths-for-all-services-in-frontend-src-data-services-ts-not-only-the-currently-featured-4-5-services",
+      "title": "Ensure every service item displayed on the Services page has an associated image by adding image paths for all services in frontend/src/data/services.ts (not only the currently featured 4–5 services).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-new-premium-consistent-style-service-images-as-static-assets-under-frontend-public-assets-generated-and-reference-them-from-the-corresponding-services-in-frontend-src-data-services-ts",
+      "title": "Add new premium, consistent-style service images as static assets under frontend/public/assets/generated and reference them from the corresponding services in frontend/src/data/services.ts.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a 5-page static site: Home, About Us, Services, Gallery, Contact",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Home page: hero headline “Premium Grooming for the Modern Gentleman”, WhatsApp Book Appointment + Call Now CTAs, luxury vibe, smooth animations",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "About page: short brand story emphasizing professionalism, hygiene, and trust for local customers",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Services page: categories (Hair, Beard & Shave, Facial & Skin Care, Premium Packages), show prices, card layout, highlight key services with images, WhatsApp/Call CTAs only (no online booking)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Gallery page: Instagram-style image grid with placeholders and easy image replacement",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact page: Google Map embed for Maduranthakam location, clickable phone/WhatsApp buttons, address display, Instagram link",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Branding & UI theme: black/charcoal with gold accents, premium clean modern typography, consistent spacing, no clutter",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "UX enhancements: elegant animations (fade/slide/hover), floating WhatsApp button, mobile call button, footer with social links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Technical: modern HTML/CSS/JS or React (Vite), fast loading, responsive, SEO meta tags, optimized images, clean reusable structure, easy Netlify deploy",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add images for all service types on the Services page (not limited to 4–5 highlighted services)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Mr Black Salon",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

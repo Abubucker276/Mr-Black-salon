@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-ensure-every-service-item-displayed-on-the-services-page-has-an-associated-image-by-adding-image-paths-for-all-services-in-frontend-src-data-services-ts-not-only-the-currently-featured-4-5-services",
+      "featureTitle": "Ensure every service item displayed on the Services page has an associated image by adding image paths for all services in frontend/src/data/services.ts (not only the currently featured 4–5 services).",
+      "files": [
+        "frontend/src/data/services.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-new-premium-consistent-style-service-images-as-static-assets-under-frontend-public-assets-generated-and-reference-them-from-the-corresponding-services-in-frontend-src-data-services-ts",
+      "featureTitle": "Add new premium, consistent-style service images as static assets under frontend/public/assets/generated and reference them from the corresponding services in frontend/src/data/services.ts.",
+      "files": [
+        "frontend/src/data/services.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

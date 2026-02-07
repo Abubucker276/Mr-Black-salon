@@ -1,0 +1,82 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Full image coverage for all Services items",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Add image paths for every service item so no ServiceCard renders without an image on the Services page.",
+      "acceptanceCriteria": [
+        "In frontend/src/data/services.ts, every Service item in every category includes an image field pointing to a file under /assets/generated/ with .dim_800x600.jpg naming.",
+        "The Services page (frontend/src/pages/ServicesPage.tsx) renders an image for every ServiceCard; there are no service cards without an image on the page."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/data/services.ts",
+          "operation": "modify",
+          "description": "Ensure every service item includes an `image` field (and update the Service type to require `image`), adding missing image paths for Hair Coloring, Hair Straightening, Royal Shave, Beard Coloring, Anti-Aging Facial, De-Tan Treatment, Executive Package, Luxury Package, and Groom Special. Keep all names/descriptions/categories/prices unchanged."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Add premium, consistent-style service images as static assets and reference them from the corresponding services data.",
+      "acceptanceCriteria": [
+        "All newly required service images exist at the exact filenames specified in imageRequirements.required.",
+        "Each new image matches the site’s existing premium dark/charcoal with warm gold accent aesthetic and is correctly displayed in the corresponding ServiceCard."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/service-hair-coloring.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Premium men’s hair coloring scene; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-hair-straightening.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Premium men’s hair straightening/styling scene; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-royal-shave.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Traditional hot towel royal shave scene; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-beard-coloring.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Men’s beard coloring/grooming scene; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-anti-aging-facial.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Men’s anti-aging facial treatment scene; premium spa mood; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-de-tan-treatment.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Men’s de-tan treatment scene; premium spa mood; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-executive-package.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Premium men’s grooming package concept: haircut + beard + facial; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-luxury-package.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Luxury grooming package concept: haircut + royal shave + facial + hair spa; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/public/assets/generated/service-groom-special.dim_800x600.jpg",
+          "operation": "create",
+          "description": "Add the required static image asset (Special occasion groom prep concept image; dark charcoal + warm gold accents; no text) at this exact filename."
+        },
+        {
+          "path": "frontend/src/data/services.ts",
+          "operation": "modify",
+          "description": "Reference the newly created generated images (under /assets/generated/ with .dim_800x600.jpg naming) in the corresponding service items so each new asset is displayed on its matching ServiceCard."
+        }
+      ]
+    }
+  ]
+}
